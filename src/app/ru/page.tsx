@@ -3,17 +3,20 @@ import type { Metadata } from "next";
 import HomePage from "@/app/page";
 
 export const metadata: Metadata = {
-  title: "Генератор Стильных Ников и Красивых Имен для Игр 🏆 | Nicknamegenerator.io",
+  title: "Символы для Ников & Ники для Пабга 🏆 | Nicknamegenerator.io",
   description:
-    "Бесплатный генератор ников и красивых шрифтов. Более 20 млн никнеймов для Free Fire, PUBG, CS2, Discord, Telegram. Редкие символы, крылья, короны и копирование в 1 клик.",
+    "Генератор символов для ников, красивых ников для PUBG, Free Fire, Telegram и Discord. Ники для пабга, стильные ники и ник в тг с крыльями ꧁꧂ и коронами 亗. Копирование в 1 клик.",
   keywords: [
+    "символы для ников",
+    "ники для пабга",
+    "ники",
+    "ник",
+    "ник в тг",
     "никнеймы для",
     "генератор ников",
     "красивые ники",
     "ники для фри фаер",
-    "ники для пабг",
     "символы для ника",
-    "красивый шрифт онлайн",
   ],
   alternates: {
     canonical: "https://www.nicknamegenerator.io/ru",
@@ -23,9 +26,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Генератор Стильных Ников и Красивых Имен для Игр 🏆 | Nicknamegenerator.io",
+    title: "Символы для Ников & Ники для Пабга 🏆 | Nicknamegenerator.io",
     description:
-      "Лучший сервис создания красивых никнеймов с редкими знаками, коронами и крыльями. Копирование в один клик.",
+      "Лучший генератор символов для ников, ников для пабга и красивых ников в тг. Стильные ники с крыльями ꧁꧂, коронами 亗 и японскими символами. Копируй в 1 клик!",
     url: "https://www.nicknamegenerator.io/ru",
     siteName: "Nicknamegenerator.io",
     locale: "ru_RU",

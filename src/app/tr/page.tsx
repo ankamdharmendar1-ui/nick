@@ -3,17 +3,19 @@ import type { Metadata } from "next";
 import HomePage from "@/app/page";
 
 export const metadata: Metadata = {
-  title: "Şekilli Takma Ad & Havalı Oyuncu Niki Oluşturucu 🏆 | Nicknamegenerator.io",
+  title: "PUBG İsimleri & Nulls Brawl Şekilli Nick Yazma 🏆 | Nicknamegenerator.io",
   description:
-    "Ücretsiz şekilli nick ve takma ad oluşturucu. Free Fire, PUBG Mobile, Valorant, Discord için 20 milyondan fazla isim fikri. Havalı semboller ve 1 tıkla kopyalama.",
+    "En havalı PUBG isimleri, Nulls Brawl şekilli nick ve Brawl Stars isim önerileri oluşturucu. Kanatlar ꧁꧂, taç 亗 ve özel sembollerle şekilli nickler. 1 tıkla kopyala.",
   keywords: [
+    "pubg isimleri",
+    "nulls brawl şekilli nick",
+    "pubg havalı isimler",
+    "brawl stars isim önerileri",
+    "nulls brawl isimleri",
     "şekilli nick",
     "şekilli takma ad",
-    "pubg nickleri",
     "free fire isimleri",
     "şekilli harfler",
-    "oyuncu adları",
-    "şekilli yazı yazma",
   ],
   alternates: {
     canonical: "https://www.nicknamegenerator.io/tr",
@@ -23,9 +25,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Şekilli Takma Ad & Havalı Oyuncu Niki Oluşturucu 🏆 | Nicknamegenerator.io",
+    title: "PUBG İsimleri & Nulls Brawl Şekilli Nick Yazma 🏆 | Nicknamegenerator.io",
     description:
-      "Akılda kalıcı oyuncu nikleri, estetik yazı tipleri ve nadir semboller tasarlayın.",
+      "Havalı PUBG isimleri, Nulls Brawl ve Brawl Stars için estetik yazı tipleri ve nadir semboller tasarlayın.",
     url: "https://www.nicknamegenerator.io/tr",
     siteName: "Nicknamegenerator.io",
     locale: "tr_TR",

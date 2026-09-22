@@ -3,17 +3,20 @@ import type { Metadata } from "next";
 import HomePage from "@/app/page";
 
 export const metadata: Metadata = {
-  title: "Spitznamen- & Gaming-Name Generator mit Schriftarten 🏆 | Nicknamegenerator.io",
+  title: "Spitznamen & Gamer Namen Generator mit Symbolen 🏆 | Nicknamegenerator.io",
   description:
-    "Kostenloser Spitznamen- und Gamer-Tag Generator. Über 20 Millionen Ideen für Free Fire, PUBG, Discord, Roblox. Stilvolle Textsymbole, coole Schriftarten und 1-Klick-Kopieren.",
+    "Kostenloser Generator für Spitznamen, Gamer Namen und Fortnite Namen. Über 20 Millionen Zocker Namen mit Flügeln ꧁꧂, Kronen 亗 und coolen Schriftarten. 1-Klick-Kopieren.",
   keywords: [
     "spitznamen für",
+    "spitznamen",
+    "gamer namen",
+    "fortnite namen",
     "spitznamen generator",
-    "gaming namen",
-    "coole schriftarten",
+    "nickname",
+    "coole gamer namen",
     "discord namen",
-    "namensideen",
     "zocker namen",
+    "coole schriftarten",
   ],
   alternates: {
     canonical: "https://www.nicknamegenerator.io/de",
@@ -23,9 +26,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Spitznamen- & Gaming-Name Generator mit Schriftarten 🏆 | Nicknamegenerator.io",
+    title: "Spitznamen & Gamer Namen Generator mit Symbolen 🏆 | Nicknamegenerator.io",
     description:
-      "Finde deinen perfekten Spitznamen oder Gamer-Tag. Über 20 Millionen Schriftstile und Symbole mit 1-Klick-Kopieren.",
+      "Finde die besten Spitznamen und Gamer Namen für Fortnite, PUBG und Discord mit Spezialzeichen, Flügeln und Kronen. Schnelles 1-Klick-Kopieren.",
     url: "https://www.nicknamegenerator.io/de",
     siteName: "Nicknamegenerator.io",
     locale: "de_DE",

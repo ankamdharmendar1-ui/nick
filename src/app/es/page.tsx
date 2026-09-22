@@ -3,17 +3,20 @@ import type { Metadata } from "next";
 import HomePage from "@/app/page";
 
 export const metadata: Metadata = {
-  title: "Generador de Apodos y Nicks Gamer con Letras y Símbolos 🏆 | Nicknamegenerator.io",
+  title: "Nombres para Free Fire & Apodos Chidos con Símbolos 🏆 | Nicknamegenerator.io",
   description:
-    "Generador de apodos y nicks gamer gratis. Más de 20 millones de apodos y nombres para Free Fire, PUBG, Discord, Roblox. Letras personalizadas, símbolos raros y copia en 1 clic.",
+    "Generador de nombres para Free Fire, apodos chidos y símbolos para Free Fire gratis. Más de 20 millones de apodos con letras bonitas, alas y coronas. Copia en 1 clic.",
   keywords: [
-    "apodos para",
+    "nombres para free fire",
+    "nombre para free fire",
+    "apodos",
+    "simbolos para free fire",
+    "nombres chidos para free fire",
+    "apodos para free fire",
     "generador de apodos",
     "nicks gamer",
-    "apodos para free fire",
     "letras bonitas",
     "nombres para pubg",
-    "simbolos para apodos",
     "creador de nicks",
   ],
   alternates: {
@@ -24,9 +27,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Generador de Apodos y Nicks Gamer con Letras y Símbolos 🏆 | Nicknamegenerator.io",
+    title: "Nombres para Free Fire & Apodos Chidos con Símbolos 🏆 | Nicknamegenerator.io",
     description:
-      "El generador de apodos y nicks gamer número uno en español. Nombres con alas, coronas y letras bonitas con copia en 1 clic.",
+      "Crea nombres para Free Fire, apodos chidos y símbolos para Free Fire. El generador de apodos número uno en español con letras bonitas, alas ꧁꧂ y coronas 亗.",
     url: "https://www.nicknamegenerator.io/es",
     siteName: "Nicknamegenerator.io",
     locale: "es_ES",

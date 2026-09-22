@@ -342,6 +342,26 @@ export default function HomePage({ initialLang = "EN" }: { initialLang?: string 
               <h2 className="text-[17px] font-semibold text-[#333] mb-3">
                 {currentLang === "FR"
                   ? "Guide des Pseudos Stylés & Questions Fréquentes"
+                  : currentLang === "ES"
+                  ? "Guía de Nombres para Free Fire & Preguntas Frecuentes"
+                  : currentLang === "IT"
+                  ? "Guida ai Soprannomi & Nomi per Fortnite — Domande Frequenti"
+                  : currentLang === "RU"
+                  ? "Символы для Ников & Ники для Пабга — Вопросы и Ответы"
+                  : currentLang === "DE"
+                  ? "Gamer Namen & Fortnite Namen — Häufige Fragen"
+                  : currentLang === "ID"
+                  ? "Nama FF Keren & Nickname FF — Panduan dan FAQ"
+                  : currentLang === "HI"
+                  ? "फ्री फायर नेम & स्टाइलिश नाम गाइड — अक्सर पूछे जाने वाले सवाल"
+                  : currentLang === "TR"
+                  ? "PUBG İsimleri & Şekilli Nick Rehberi — Sıkça Sorulan Sorular"
+                  : currentLang === "BR"
+                  ? "Guia de Nomes para Free Fire Masculino Top & Perguntas Frequentes"
+                  : currentLang === "JP"
+                  ? "かっこいいニックネーム生成＆特殊文字フォント — よくある質問"
+                  : currentLang === "KR"
+                  ? "게임 닉네임 추천 & 특수문자 닉네임 가이드 — 자주 묻는 질문"
                   : "Frequently Asked Questions & Gaming Name Guide"}
               </h2>
               <SeoFaqSection lang={currentLang} />

@@ -99,10 +99,34 @@ export const NickCenterContent: React.FC<NickCenterContentProps> = ({
         <div className="bg-white rounded-[3px] shadow-[0_1px_1px_rgba(0,0,0,0.1)] border border-[#d2d6de] border-t-[3px] border-t-[#6b93c7] overflow-hidden">
           <div className="border-b border-[#f4f4f4] px-4 py-2.5 flex items-center justify-between">
             <h2 className="text-[17px] font-semibold text-[#333] m-0">
-              Results for &quot;<span className="text-[#0055ff]">{searchQuery}</span>&quot;
+              {t.mainTitle?.includes("Générateur de Pseudo") ? (
+                <>Surnoms pour &quot;<span className="text-[#0055ff]">{searchQuery}</span>&quot;:</>
+              ) : t.mainTitle?.includes("Nombres para Free Fire") ? (
+                <>Apodos para &quot;<span className="text-[#0055ff]">{searchQuery}</span>&quot;:</>
+              ) : t.mainTitle?.includes("Soprannomi") ? (
+                <>Soprannomi per &quot;<span className="text-[#0055ff]">{searchQuery}</span>&quot;:</>
+              ) : t.mainTitle?.includes("Символы для Ников") ? (
+                <>Никнеймы для &quot;<span className="text-[#0055ff]">{searchQuery}</span>&quot;:</>
+              ) : t.mainTitle?.includes("Spitznamen") ? (
+                <>Spitznamen für &quot;<span className="text-[#0055ff]">{searchQuery}</span>&quot;:</>
+              ) : t.mainTitle?.includes("Nama FF Keren") ? (
+                <>Nama panggilan untuk &quot;<span className="text-[#0055ff]">{searchQuery}</span>&quot;:</>
+              ) : t.mainTitle?.includes("फ्री फायर") ? (
+                <>&quot;<span className="text-[#0055ff]">{searchQuery}</span>&quot; के उपनाम:</>
+              ) : t.mainTitle?.includes("PUBG İsimleri") ? (
+                <>&quot;<span className="text-[#0055ff]">{searchQuery}</span>&quot; takma adları:</>
+              ) : t.mainTitle?.includes("Apelidos & Nomes") ? (
+                <>Apelidos para &quot;<span className="text-[#0055ff]">{searchQuery}</span>&quot;:</>
+              ) : t.mainTitle?.includes("かっこいいニックネーム") ? (
+                <>&quot;<span className="text-[#0055ff]">{searchQuery}</span>&quot;のニックネーム:</>
+              ) : t.mainTitle?.includes("게임 닉네임") ? (
+                <>&quot;<span className="text-[#0055ff]">{searchQuery}</span>&quot; 닉네임:</>
+              ) : (
+                <>Nicknames for &quot;<span className="text-[#0055ff]">{searchQuery}</span>&quot;:</>
+              )}
             </h2>
             <span className="text-xs text-gray-500 font-medium">
-              {searchStyles.length} stylish variants generated
+              {searchStyles.length} stylish variants
             </span>
           </div>
           <div className="p-2 sm:p-2.5">

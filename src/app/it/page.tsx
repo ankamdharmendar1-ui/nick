@@ -3,17 +3,20 @@ import type { Metadata } from "next";
 import HomePage from "@/app/page";
 
 export const metadata: Metadata = {
-  title: "Generatore di Nickname Gamer & Soprannomi Speciali 🏆 | Nicknamegenerator.io",
+  title: "Soprannomi & Nomi per Fortnite e Brawl Stars 🏆 | Nicknamegenerator.io",
   description:
-    "Generatore di nickname e soprannomi gamer gratuito. Oltre 20 milioni di idee di soprannomi per Free Fire, PUBG, Discord, Roblox. Caratteri speciali, simboli rari e copia in 1 clic.",
+    "Generatore di soprannomi, nomi per Fortnite, nomi Brawl Stars e nomi per Fortnite gratis. Oltre 20 milioni di nickname con simboli speciali, ali e corone. Copia in 1 clic.",
   keywords: [
+    "soprannomi",
+    "nomi brawl stars",
+    "nomi fortnite",
+    "nomi per fortnite",
     "soprannomi per",
     "generatore di nickname",
     "nomi gamer",
     "caratteri speciali",
-    "nomi per discord",
-    "simboli nickname",
     "nickname per giochi",
+    "simboli nickname",
   ],
   alternates: {
     canonical: "https://www.nicknamegenerator.io/it",
@@ -23,9 +26,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Generatore di Nickname Gamer & Soprannomi Speciali 🏆 | Nicknamegenerator.io",
+    title: "Soprannomi & Nomi per Fortnite e Brawl Stars 🏆 | Nicknamegenerator.io",
     description:
-      "Crea nickname originali, soprannomi estetici e caratteri speciali per i tuoi profili di gioco.",
+      "Crea soprannomi creativi, nomi per Fortnite e nomi Brawl Stars con simboli speciali ꧁꧂, ali e corone 亗. Il generatore di nickname italiano numero uno.",
     url: "https://www.nicknamegenerator.io/it",
     siteName: "Nicknamegenerator.io",
     locale: "it_IT",

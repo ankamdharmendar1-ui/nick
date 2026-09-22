@@ -3,17 +3,19 @@ import type { Metadata } from "next";
 import HomePage from "@/app/page";
 
 export const metadata: Metadata = {
-  title: "Generator Nama Panggilan Keren & Nickname Game Estetik 🏆 | Nicknamegenerator.io",
+  title: "Nama FF Keren & Nickname FF dengan Simbol Payung & Sayap 🏆 | Nicknamegenerator.io",
   description:
-    "Generator nama panggilan keren dan nickname game gratis. Lebih dari 20 juta ide nama untuk Free Fire, PUBG Mobile, Mobile Legends, Roblox. Simbol estetik dan salin 1 klik.",
+    "Generator nama FF keren, nickname FF, dan nama FF simbol gratis. Lebih dari 20 juta ide nama Free Fire dengan sayap ꧁꧂, mahkota 亗, payung ☂️. Salin cepat 1 klik.",
   keywords: [
-    "nama panggilan untuk",
-    "generator nama panggilan",
     "nama ff keren",
+    "nickname ff",
+    "nama ff",
+    "raja buaya",
+    "nama ff payung",
+    "simbol nama ff",
+    "generator nama ff",
     "nama pubg keren",
-    "simbol tulisan keren",
     "nama ml estetik",
-    "font tulisan keren",
   ],
   alternates: {
     canonical: "https://www.nicknamegenerator.io/id",
@@ -23,9 +25,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Generator Nama Panggilan Keren & Nickname Game Estetik 🏆 | Nicknamegenerator.io",
+    title: "Nama FF Keren & Nickname FF dengan Simbol Payung & Sayap 🏆 | Nicknamegenerator.io",
     description:
-      "Temukan ribuan nama game keren dan simbol estetik untuk Free Fire, PUBG, dan Mobile Legends.",
+      "Temukan ribuan nama FF keren, nickname FF raja buaya, dan simbol estetik untuk Free Fire dan PUBG Mobile.",
     url: "https://www.nicknamegenerator.io/id",
     siteName: "Nicknamegenerator.io",
     locale: "id_ID",

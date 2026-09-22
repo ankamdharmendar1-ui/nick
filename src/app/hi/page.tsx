@@ -3,13 +3,16 @@ import type { Metadata } from "next";
 import HomePage from "@/app/page";
 
 export const metadata: Metadata = {
-  title: "कस्टम उपनाम और स्टाइलिश गेमर टैग जेनरेटर 🏆 | Nicknamegenerator.io",
+  title: "फ्री फायर नेम & स्टाइलिश नाम जेनरेटर 🏆 | Nicknamegenerator.io",
   description:
-    "मुफ़्त ऑनलाइन उपनाम और गेमर टैग जेनरेटर। Free Fire, BGMI, PUBG, Discord के लिए 2 करोड़ से अधिक स्टाइलिश नाम और दुर्लभ प्रतीक। 1-क्लिक कॉपी।",
+    "फ्री फायर नेम, स्टाइलिश नाम और निकनेम जेनरेटर। 2 करोड़ से ज्यादा स्टाइलिश गेमर नाम, पंख ꧁꧂, मुकुट 亗 और दुर्लभ प्रतीकों के साथ। 1-क्लिक में कॉपी करें।",
   keywords: [
-    "उपनाम जेनरेटर",
+    "फ्री फायर नेम",
     "स्टाइलिश नाम",
-    "फ्री फायर नाम",
+    "निकनेम",
+    "नाम",
+    "निकफाइंडर",
+    "उपनाम जेनरेटर",
     "बीजीएमआई गेमर टैग",
     "नाम प्रतीक",
     "कूल टेक्स्ट स्टाइल",
@@ -22,9 +25,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "कस्टम उपनाम और स्टाइलिश गेमर टैग जेनरेटर 🏆 | Nicknamegenerator.io",
+    title: "फ्री फायर नेम & स्टाइलिश नाम जेनरेटर 🏆 | Nicknamegenerator.io",
     description:
-      "गेमिंग और सोशल मीडिया के लिए बेहतरीन स्टाइलिश उपनाम और दुर्लभ फ़ॉन्ट बनाएं।",
+      "गेमिंग और सोशल मीडिया के लिए बेहतरीन फ्री फायर नेम, स्टाइलिश नाम और दुर्लभ फ़ॉन्ट बनाएं।",
     url: "https://www.nicknamegenerator.io/hi",
     siteName: "Nicknamegenerator.io",
     locale: "hi_IN",
