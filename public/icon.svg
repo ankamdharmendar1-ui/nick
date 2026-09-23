@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Cyan Glow Gradient -->
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0055ff"/>
+    </linearGradient>
+
+    <!-- Gold Crown Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+
+    <!-- Subtle Drop Shadow -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#00c0ef" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Squircle Base with Cyan Border Glow -->
+  <rect x="24" y="24" width="464" height="464" rx="108" fill="url(#bgGrad)" stroke="url(#cyanGrad)" stroke-width="12" filter="url(#glow)"/>
+
+  <!-- Inner Subtle Accent Line -->
+  <rect x="36" y="36" width="440" height="440" rx="96" fill="none" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.25"/>
+
+  <!-- Apex Esports Crown on Top -->
+  <path d="M 176 172 L 208 120 L 256 156 L 304 120 L 336 172 Z" fill="url(#goldGrad)" stroke="#78350f" stroke-width="3"/>
+  <circle cx="208" cy="116" r="8" fill="#fef08a"/>
+  <circle cx="256" cy="110" r="10" fill="#fef08a"/>
+  <circle cx="304" cy="116" r="8" fill="#fef08a"/>
+
+  <!-- Stylized Esports "N" Mark -->
+  <!-- Left Pillar -->
+  <path d="M 152 208 L 196 208 L 196 404 L 152 404 Z" fill="#ffffff"/>
+  
+  <!-- Diagonal Slash -->
+  <path d="M 196 208 L 316 376 L 316 404 L 272 404 L 152 236 Z" fill="url(#cyanGrad)"/>
+
+  <!-- Right Pillar -->
+  <path d="M 316 208 L 360 208 L 360 404 L 316 404 Z" fill="#ffffff"/>
+
+  <!-- Small Cyan Glow Dot / Badge Accent -->
+  <circle cx="372" cy="180" r="14" fill="#00c0ef"/>
+</svg>
