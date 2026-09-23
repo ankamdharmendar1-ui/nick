@@ -19,11 +19,11 @@ const FAQ_ITEMS_EN: FaqItem[] = [
           Cool Text Generator
         </Link>{" "}
         or explore our{" "}
-        <Link href="/?q=Freefire" className="text-[#0055ff] font-semibold hover:underline">
+        <Link href="/freefire" className="text-[#0055ff] font-semibold hover:underline">
           Free Fire Nicknames
         </Link>{" "}
         and{" "}
-        <Link href="/?q=PUBG" className="text-[#0055ff] font-semibold hover:underline">
+        <Link href="/pubg-stylish-name" className="text-[#0055ff] font-semibold hover:underline">
           PUBG Name Ideas
         </Link>
         . Click any design to copy it directly to your clipboard.
@@ -208,11 +208,11 @@ const INFO_CARDS_EN: InfoCard[] = [
     body: (
       <span>
         Discover how competitive esports players style their handles with signature wings (꧁༒☬ ☬༒꧂), apex crowns (亗), and crosshairs (x͜×). Explore our{" "}
-        <Link href="/?q=Freefire" className="text-[#0055ff] font-medium hover:underline">
+        <Link href="/freefire" className="text-[#0055ff] font-medium hover:underline">
           Free Fire Tags
         </Link>{" "}
         and{" "}
-        <Link href="/?q=PUBG" className="text-[#0055ff] font-medium hover:underline">
+        <Link href="/pubg-stylish-name" className="text-[#0055ff] font-medium hover:underline">
           PUBG Collections
         </Link>
         .

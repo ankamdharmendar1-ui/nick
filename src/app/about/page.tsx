@@ -80,10 +80,10 @@ export default function AboutPage() {
           </div>
           <div className="p-5 text-[14px] text-gray-700 leading-relaxed">
             <p>
-              Whether you need a legendary wings nickname for <Link href="/?q=Freefire" className="text-[#2c6da5] hover:underline">Free Fire</Link>,
-              a conqueror font for <Link href="/?q=PUBG" className="text-[#2c6da5] hover:underline">PUBG</Link>/<Link href="/?q=BGMI" className="text-[#2c6da5] hover:underline">BGMI</Link>,
-              a sleek duelist tag for <Link href="/?q=Valorant" className="text-[#2c6da5] hover:underline">Valorant</Link>,
-              or a cute username for <Link href="/?q=Roblox" className="text-[#2c6da5] hover:underline">Roblox</Link> and <Link href="/?q=Discord" className="text-[#2c6da5] hover:underline">Discord</Link> — Nicknamegenerator.io has you covered.
+              Whether you need a legendary wings nickname for <Link href="/freefire" className="text-[#2c6da5] hover:underline">Free Fire</Link>,
+              a conqueror font for <Link href="/pubg-stylish-name" className="text-[#2c6da5] hover:underline">PUBG</Link>/<Link href="/pubg-stylish-name" className="text-[#2c6da5] hover:underline">BGMI</Link>,
+              a sleek duelist tag for <Link href="/stylish-text" className="text-[#2c6da5] hover:underline">Valorant</Link>,
+              or a cute username for <Link href="/pubg-girl-names" className="text-[#2c6da5] hover:underline">Roblox</Link> and <Link href="/nickname-maker" className="text-[#2c6da5] hover:underline">Discord</Link> — Nicknamegenerator.io has you covered.
             </p>
           </div>
         </div>

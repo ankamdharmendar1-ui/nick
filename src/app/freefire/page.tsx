@@ -23,12 +23,12 @@ export const metadata: Metadata = {
 };
 
 const RELATED = [
-  { label: "PUBG Nicknames", href: "/?q=PUBG" },
-  { label: "BGMI Nicknames", href: "/?q=BGMI" },
-  { label: "Roblox Nicknames", href: "/?q=Roblox" },
-  { label: "Valorant Nicknames", href: "/?q=Valorant" },
-  { label: "Stylish Text Generator", href: "/stylish-text" },
+  { label: "PUBG Stylish Names", href: "/pubg-stylish-name" },
+  { label: "Free Fire Guild Names", href: "/free-fire-guild-name" },
+  { label: "PUBG Girl Names", href: "/pubg-girl-names" },
   { label: "FF Name Style", href: "/ff-name-style" },
+  { label: "Stylish Text Generator", href: "/stylish-text" },
+  { label: "Nickname Maker", href: "/nickname-maker" },
   { label: "Symbol Generator", href: "/nickname-to-symbols" },
 ];
 
