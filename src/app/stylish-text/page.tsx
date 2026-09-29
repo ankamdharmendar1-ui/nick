@@ -4,18 +4,18 @@ import type { Metadata } from "next";
 import StylishTextTool from "@/components/StylishTextTool";
 
 export const metadata: Metadata = {
-  title: "Stylish Name & Fancy Text Generator – Online Name Writing in 100+ Fonts",
+  title: "Nickname Generator with Stylish Text Symbols & Fancy Fonts 🏆",
   description:
-    "Free online stylish name writing and fancy text generator. Convert normal text into 100+ stylish name writing fonts, symbols, and cool gamertags with one-click copy.",
+    "Free online nickname generator with stylish text symbols and fancy fonts. Convert your nickname into 100+ stylish fonts, symbols, wings, crowns, and cool gamertags with one-click copy.",
   keywords: [
-    "name writing", "stylish name writing", "name writing style", "stylish name generator", "fancy text generator", "cool font generator",
+    "nickname generator", "nick name generator", "nickname generator with stylish text symbols", "stylish name writing", "fancy text generator", "cool font generator",
     "stylish text symbols", "nickname font converter", "unicode font generator",
     "stylish name for free fire", "fancy text copy paste", "cool text generator",
   ],
   alternates: { canonical: "https://www.nicknamegenerator.io/stylish-text" },
   openGraph: {
-    title: "Stylish Name & Fancy Text Generator – Online Name Writing in 100+ Fonts",
-    description: "Free online stylish name writing and fancy text generator. 100+ fonts, symbols, and nickname styles with one-click copy.",
+    title: "Nickname Generator with Stylish Text Symbols & Fancy Fonts 🏆",
+    description: "Free online nickname generator with stylish text symbols and fancy fonts. 100+ fonts, symbols, and nickname styles with one-click copy.",
     url: "https://www.nicknamegenerator.io/stylish-text",
     siteName: "Nicknamegenerator.io",
     type: "website",
@@ -59,7 +59,7 @@ export default function StylishTextPage() {
         {/* H1 Box */}
         <div className="bg-white rounded-[3px] shadow-[0_1px_1px_rgba(0,0,0,0.1)] border border-[#d2d6de] border-t-[3px] border-t-[#6b93c7] p-5 mb-4">
           <h1 className="text-[22px] sm:text-[26px] font-bold text-[#222] m-0 leading-tight">
-            Stylish Name &amp; Fancy Text Generator – Online Name Writing
+            Nickname Generator with Stylish Text Symbols &amp; Fancy Fonts
             <span className="text-[13px] font-normal text-gray-600 font-mono ml-2">
               𝓢𝓱𝓪𝓭𝓸𝔀, 『ＳＨＡＤＯＷ』, ꧁Shadow꧂, Ｓｈａｄｏｗ...
             </span>

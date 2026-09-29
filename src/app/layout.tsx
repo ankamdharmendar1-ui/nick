@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     "Free online nickname generator and username creator. Design standout nicknames, stylish font styles, and aesthetic usernames with rare symbols. Built for Free Fire, PUBG, Discord, Roblox, and social media.",
   keywords: [
     "nickname generator",
+    "nick name generator",
     "nickname maker",
     "nicknamegenerator.io",
     "username generator",

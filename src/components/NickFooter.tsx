@@ -148,8 +148,8 @@ export const NickFooter: React.FC = () => {
             </h4>
             <ul className="space-y-2 text-[12px] list-none p-0 m-0">
               <li>
-                <Link href="/" title="Home – Nickname Generator" className="text-[#2c6da5] hover:underline">
-                  Home
+                <Link href="/" title="Nickname Generator & Username Creator" className="text-[#2c6da5] hover:underline font-semibold">
+                  Nickname Generator
                 </Link>
               </li>
               <li>
@@ -194,8 +194,8 @@ export const NickFooter: React.FC = () => {
 
         {/* Quick Links Row */}
         <div className="flex flex-wrap items-center gap-4 text-xs text-gray-400">
-          <Link href="/" className="hover:underline">
-            Home
+          <Link href="/" className="hover:underline font-semibold text-gray-300">
+            Nickname Generator
           </Link>
           <Link href="/freefire" className="hover:underline">
             Free Fire
