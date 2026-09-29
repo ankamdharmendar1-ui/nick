@@ -53,6 +53,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/nickname-editor`,                lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/love-style-name`,                lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/instagram`,                      lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/de/instagram`,                   lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/fr/instagram`,                   lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/es/instagram`,                   lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/it/instagram`,                   lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/ru/instagram`,                   lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/tr/instagram`,                   lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/id/instagram`,                   lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/hi/instagram`,                   lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/jp/instagram`,                   lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/kr/instagram`,                   lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/br/instagram`,                   lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/instagram-girl-attitude-names`,  lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.8 },
 
     // ── Tool Generators ────────────────────────────────────────────────────
