@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import type { Metadata } from "next";
 import GuildNameGrid from "@/components/GuildNameGrid";
+import { NickFooter } from "@/components/NickFooter";
 
 export const metadata: Metadata = {
   title: "Free Fire Guild Names 🏆 – 50+ Best FF Clan & Guild Tags to Copy",
@@ -163,19 +164,11 @@ export default function FreeFireGuildNamePage() {
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="text-center text-[12px] text-gray-500 mt-4 space-x-3">
-          <Link href="/" className="text-[#2c6da5] hover:underline">Home</Link>
-          <span>|</span>
-          <Link href="/freefire" className="text-[#2c6da5] hover:underline">Free Fire</Link>
-          <span>|</span>
-          <Link href="/stylish-text" className="text-[#2c6da5] hover:underline">Stylish Text</Link>
-          <span>|</span>
-          <Link href="/about" className="text-[#2c6da5] hover:underline">About</Link>
-          <span>|</span>
-          <Link href="/contact" className="text-[#2c6da5] hover:underline">Contact</Link>
-        </div>
       </div>
+
+      {/* Global Footer */}
+      <NickFooter />
     </div>
   );
 }
+

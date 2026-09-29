@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import type { Metadata } from "next";
 import FreefireGrid from "@/components/FreefireGrid";
+import { NickFooter } from "@/components/NickFooter";
 
 export const metadata: Metadata = {
   title: "Free Fire Nicknames & FF Nickname Generator 🏆 – Stylish Names & Symbols",
@@ -145,18 +146,11 @@ export default function FreefirePage() {
           </div>
         </div>
 
-        <div className="text-center text-[12px] text-gray-500 mt-4 space-x-3">
-          <Link href="/" className="text-[#2c6da5] hover:underline">Home</Link>
-          <span>|</span>
-          <Link href="/about" className="text-[#2c6da5] hover:underline">About</Link>
-          <span>|</span>
-          <Link href="/contact" className="text-[#2c6da5] hover:underline">Contact</Link>
-          <span>|</span>
-          <Link href="/terms" className="text-[#2c6da5] hover:underline">Terms</Link>
-          <span>|</span>
-          <Link href="/privacy-policy" className="text-[#2c6da5] hover:underline">Privacy Policy</Link>
-        </div>
       </div>
+
+      {/* Global Footer */}
+      <NickFooter />
     </div>
   );
 }
+

@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import type { Metadata } from "next";
 import AttitudeNamesGrid from "@/components/AttitudeNamesGrid";
+import { NickFooter } from "@/components/NickFooter";
 
 export const metadata: Metadata = {
   title: "Stylish Attitude Names for Instagram for Girl 💕 – 50+ Names & Bio Ideas",
@@ -180,19 +181,11 @@ export default function InstagramGirlAttitudeNamesPage() {
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="text-center text-[12px] text-gray-500 mt-4 space-x-3">
-          <Link href="/" className="text-[#2c6da5] hover:underline">Home</Link>
-          <span>|</span>
-          <Link href="/pubg-girl-names" className="text-[#2c6da5] hover:underline">PUBG Girls</Link>
-          <span>|</span>
-          <Link href="/love-style-name" className="text-[#2c6da5] hover:underline">Love Style Names</Link>
-          <span>|</span>
-          <Link href="/stylish-text" className="text-[#2c6da5] hover:underline">Stylish Text</Link>
-          <span>|</span>
-          <Link href="/about" className="text-[#2c6da5] hover:underline">About</Link>
-        </div>
       </div>
+
+      {/* Global Footer */}
+      <NickFooter />
     </div>
   );
 }
+

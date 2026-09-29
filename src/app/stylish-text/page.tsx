@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import type { Metadata } from "next";
 import StylishTextTool from "@/components/StylishTextTool";
+import { NickFooter } from "@/components/NickFooter";
 
 export const metadata: Metadata = {
   title: "Nickname Generator with Stylish Text Symbols & Fancy Fonts 🏆",
@@ -161,20 +162,11 @@ export default function StylishTextPage() {
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="text-center text-[12px] text-gray-500 mt-4 space-x-3">
-          <Link href="/" className="text-[#2c6da5] hover:underline">Home</Link>
-          <span>|</span>
-          <Link href="/freefire" className="text-[#2c6da5] hover:underline">Free Fire</Link>
-          <span>|</span>
-          <Link href="/about" className="text-[#2c6da5] hover:underline">About</Link>
-          <span>|</span>
-          <Link href="/contact" className="text-[#2c6da5] hover:underline">Contact</Link>
-          <span>|</span>
-          <Link href="/privacy-policy" className="text-[#2c6da5] hover:underline">Privacy Policy</Link>
-        </div>
-
       </div>
+
+      {/* Global Footer */}
+      <NickFooter />
     </div>
   );
 }
+

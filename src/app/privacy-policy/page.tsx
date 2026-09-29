@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { NickFooter } from "@/components/NickFooter";
 
 export const metadata = {
   title: "Privacy Policy | Nicknamegenerator.io",
@@ -66,16 +67,11 @@ export default function PrivacyPolicyPage() {
           </div>
         </div>
 
-        <div className="text-center text-[12px] text-gray-500 mt-4 space-x-3">
-          <Link href="/" className="text-[#2c6da5] hover:underline">Home</Link>
-          <span>|</span>
-          <Link href="/about" className="text-[#2c6da5] hover:underline">About</Link>
-          <span>|</span>
-          <Link href="/contact" className="text-[#2c6da5] hover:underline">Contact</Link>
-          <span>|</span>
-          <Link href="/terms" className="text-[#2c6da5] hover:underline">Terms of Use</Link>
-        </div>
       </div>
+
+      {/* Global Footer */}
+      <NickFooter />
     </div>
   );
 }
+

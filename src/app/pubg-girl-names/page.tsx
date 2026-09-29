@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import type { Metadata } from "next";
 import PubgGirlNamesGrid from "@/components/PubgGirlNamesGrid";
+import { NickFooter } from "@/components/NickFooter";
 
 export const metadata: Metadata = {
   title: "PUBG Names for Girls 🌸 – 50+ Cute & Stylish BGMI Girl Nicknames",
@@ -138,19 +139,11 @@ export default function PubgGirlNamesPage() {
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="text-center text-[12px] text-gray-500 mt-4 space-x-3">
-          <Link href="/" className="text-[#2c6da5] hover:underline">Home</Link>
-          <span>|</span>
-          <Link href="/pubg-stylish-name" className="text-[#2c6da5] hover:underline">PUBG Names</Link>
-          <span>|</span>
-          <Link href="/instagram-girl-attitude-names" className="text-[#2c6da5] hover:underline">Instagram Girls</Link>
-          <span>|</span>
-          <Link href="/stylish-text" className="text-[#2c6da5] hover:underline">Stylish Text</Link>
-          <span>|</span>
-          <Link href="/about" className="text-[#2c6da5] hover:underline">About</Link>
-        </div>
       </div>
+
+      {/* Global Footer */}
+      <NickFooter />
     </div>
   );
 }
+

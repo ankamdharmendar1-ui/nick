@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import FfNameStyleTool from "@/components/FfNameStyleTool";
+import { NickFooter } from "@/components/NickFooter";
 
 export const metadata: Metadata = {
   title: "FF Name Style: Stylish Free Fire Names, Fonts & Symbols",
@@ -47,6 +48,8 @@ export default function FfNameStylePage() {
           <div className="space-y-4 p-5 text-[14px] leading-relaxed text-gray-700"><div><h3 className="font-bold text-[#354861]">What is an FF name style?</h3><p className="m-0">An FF name style is a Free Fire nickname enhanced with Unicode fonts, symbols, and decorative characters.</p></div><div><h3 className="font-bold text-[#354861]">How do I copy an FF stylish name?</h3><p className="m-0">Click the Copy button beside any generated name style, then paste it into the nickname field in Free Fire.</p></div><div><h3 className="font-bold text-[#354861]">Where can I find more Free Fire nickname ideas?</h3><p className="m-0">Browse our <Link href="/freefire" className="text-[#2c6da5] hover:underline">Free Fire nicknames</Link> or use the <Link href="/stylish-text" className="text-[#2c6da5] hover:underline">stylish text generator</Link> for more font styles.</p></div></div>
         </section>
       </main>
+      <NickFooter />
     </div>
   );
 }
+

@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import { NickFooter } from "@/components/NickFooter";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -106,16 +107,11 @@ export default function ContactPage() {
           </>
         )}
 
-        <div className="text-center text-[12px] text-gray-500 mt-6 space-x-3">
-          <Link href="/" className="text-[#2c6da5] hover:underline">Home</Link>
-          <span>|</span>
-          <Link href="/about" className="text-[#2c6da5] hover:underline">About</Link>
-          <span>|</span>
-          <Link href="/terms" className="text-[#2c6da5] hover:underline">Terms of Use</Link>
-          <span>|</span>
-          <Link href="/privacy-policy" className="text-[#2c6da5] hover:underline">Privacy Policy</Link>
-        </div>
       </div>
+
+      {/* Global Footer */}
+      <NickFooter />
     </div>
   );
 }
+

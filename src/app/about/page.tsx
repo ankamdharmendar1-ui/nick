@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { NickFooter } from "@/components/NickFooter";
 
 export const metadata = {
   title: "About Us | Nicknamegenerator.io",
@@ -88,17 +89,11 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Footer links */}
-        <div className="text-center text-[12px] text-gray-500 mt-6 space-x-3">
-          <Link href="/" className="text-[#2c6da5] hover:underline">Home</Link>
-          <span>|</span>
-          <Link href="/contact" className="text-[#2c6da5] hover:underline">Contact</Link>
-          <span>|</span>
-          <Link href="/terms" className="text-[#2c6da5] hover:underline">Terms of Use</Link>
-          <span>|</span>
-          <Link href="/privacy-policy" className="text-[#2c6da5] hover:underline">Privacy Policy</Link>
-        </div>
       </div>
+
+      {/* Global Footer */}
+      <NickFooter />
     </div>
   );
 }
+
