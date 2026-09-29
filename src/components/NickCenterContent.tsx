@@ -160,7 +160,7 @@ export const NickCenterContent: React.FC<NickCenterContentProps> = ({
           </span>
         </h1>
 
-        <div className="mt-3.5 text-[14px] text-gray-700 leading-relaxed space-y-3">
+        <div className="hidden sm:block mt-3.5 text-[14px] text-gray-700 leading-relaxed space-y-3">
           <p className="indent-4 m-0">
             {t.p1}
           </p>
