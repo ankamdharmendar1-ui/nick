@@ -32,6 +32,62 @@ export const metadata: Metadata = {
     siteName: "Nicknamegenerator.io",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nicknames for Instagram: A L O N E B O Y, angel_life ❤️ 🏆",
+    description:
+      "Find 60+ stylish Instagram usernames, aesthetic spaced fonts, attitude bios, and rare symbols with one-click copy.",
+  },
+};
+
+const INSTAGRAM_FAQ_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How do I get a stylish nickname for Instagram?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "You can choose any pre-made nickname from this page or use our Stylish Text Generator to type your name and generate 100+ fancy font styles like spaced text (A L O N E  B O Y), cursive, or gothic with one-click copy.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can I use symbols and special fonts in my Instagram bio?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes! Instagram fully supports Unicode symbols, hearts (♡), crowns (♕), stars (★), and stylish font alphabets in your display name and bio section.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are these Instagram nicknames free to use?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, 100% free with unlimited copying and no registration required.",
+      },
+    },
+  ],
+};
+
+const BREADCRUMB_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://www.nicknamegenerator.io",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Nicknames for Instagram",
+      item: "https://www.nicknamegenerator.io/instagram",
+    },
+  ],
 };
 
 const RELATED = [
@@ -66,6 +122,16 @@ const BIO_TEMPLATES = [
 export default function InstagramPage() {
   return (
     <div className="min-h-screen bg-[#ecf0f5] text-[#222]">
+      {/* Schema.org Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(INSTAGRAM_FAQ_SCHEMA) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }}
+      />
+
       {/* Header */}
       <header className="bg-[#354861] h-[44px] flex items-center px-4 shadow-md">
         <Link href="/" className="text-white font-light text-[26px] tracking-tight hover:opacity-80">
