@@ -52,6 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/nickname-maker`,                 lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/nickname-editor`,                lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/love-style-name`,                lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${BASE_URL}/instagram`,                      lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/instagram-girl-attitude-names`,  lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.8 },
 
     // ── Tool Generators ────────────────────────────────────────────────────

@@ -104,6 +104,11 @@ export const NickFooter: React.FC = () => {
             </h4>
             <ul className="space-y-2 text-[12px] list-none p-0 m-0">
               <li>
+                <Link href="/instagram" title="Nicknames for Instagram, aesthetic handles & bios" className="text-[#2c6da5] hover:underline font-medium">
+                  Nicknames for Instagram
+                </Link>
+              </li>
+              <li>
                 <Link href="/instagram-girl-attitude-names" title="Attitude names and bios for Instagram girls" className="text-[#2c6da5] hover:underline">
                   Instagram Attitude Girls
                 </Link>
