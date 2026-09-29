@@ -64,6 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/jp/instagram`,                   lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/kr/instagram`,                   lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/br/instagram`,                   lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/tr/nulls-brawl`,                 lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/instagram-girl-attitude-names`,  lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.8 },
 
     // ── Tool Generators ────────────────────────────────────────────────────
