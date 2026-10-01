@@ -56,7 +56,8 @@ const SMALL_CAPS_MAP: FontMap = {
   u: "ᴜ", v: "ᴠ", w: "ᴡ", x: "x", y: "ʏ", z: "ᴢ",
   A: "ᴀ", B: "ʙ", C: "ᴄ", D: "ᴅ", E: "ᴇ", F: "ꜰ", G: "ɢ", H: "ʜ", I: "ɪ", J: "ᴊ",
   K: "ᴋ", L: "ʟ", M: "ᴍ", N: "ɴ", O: "ᴏ", P: "ᴘ", Q: "ǫ", R: "ʀ", S: "s", T: "ᴛ",
-  U: "ᴜ", V: "ᴠ", W: "ᴡ", X: "x", Y: "ʏ", Z: "ᴢ"
+  U: "ᴜ", V: "ᴠ", W: "ᴡ", X: "x", Y: "ʏ", Z: "ᴢ",
+  "0": "⁰", "1": "¹", "2": "²", "3": "³", "4": "⁴", "5": "⁵", "6": "⁶", "7": "⁷", "8": "⁸", "9": "⁹"
 };
 
 // Circled / Bubble
@@ -65,6 +66,45 @@ const CIRCLED_CHARS = [
   "Ⓐ","Ⓑ","Ⓒ","Ⓓ","Ⓔ","Ⓕ","Ⓖ","Ⓗ","Ⓘ","Ⓙ","Ⓚ","Ⓛ","Ⓜ","Ⓝ","Ⓞ","Ⓟ","Ⓠ","Ⓡ","Ⓢ","Ⓣ","Ⓤ","Ⓥ","Ⓦ","Ⓧ","Ⓨ","Ⓩ",
   "⓪","①","②","③","④","⑤","⑥","⑦","⑧","⑨"
 ];
+
+// Circled Dark (Inverted Bubble)
+const CIRCLED_DARK_CHARS = [
+  "🅐","🅑","🅒","🅓","🅔","🅕","🅖","🅗","🅘","🅙","🅚","🅛","🅜","🅝","🅞","🅟","🅠","🅡","🅢","🅣","🅤","🅥","🅦","🅧","🅨","🅩",
+  "🅐","🅑","🅒","🅓","🅔","🅕","🅖","🅗","🅘","🅙","🅚","🅛","🅜","🅝","🅞","🅟","🅠","🅡","🅢","🅣","🅤","🅥","🅦","🅧","🅨","🅩",
+  "⓿","❶","❷","❸","❹","❺","❻","❼","❽","❾"
+];
+
+// Squared Light
+const SQUARED_CHARS = [
+  "🄰","🄱","🄲","🄳","🄴","🄵","🄶","🄷","🄸","🄹","🄺","🄻","🄼","🄽","🄾","🄿","🅀","🅁","🅂","🅃","🅄","🅅","🅆","🅇","🅈","🅉",
+  "🄰","🄱","🄲","🄳","🄴","🄵","🄶","🄷","🄸","🄹","🄺","🄻","🄼","🄽","🄾","🄿","🅀","🅁","🅂","🅃","🅄","🅅","🅆","🅇","🅈","🅉",
+  "0️⃣","1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣","7️⃣","8️⃣","9️⃣"
+];
+
+// Squared Dark (Badge / Red-styled Boxes)
+const SQUARED_DARK_CHARS = [
+  "🅰","🅱","🅲","🅳","🅴","🅵","🅶","🅷","🅸","🅹","🅺","🅻","🅼","🅽","🅾","🅿","🆀","🆁","🆂","🆃","🆄","🆅","🆆","🆇","🆈","🆉",
+  "🅰","🅱","🅲","🅳","🅴","🅵","🅶","🅷","🅸","🅹","🅺","🅻","🅼","🅽","🅾","🅿","🆀","🆁","🆂","🆃","🆄","🆅","🆆","🆇","🆈","🆉",
+  "0️⃣","1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣","7️⃣","8️⃣","9️⃣"
+];
+
+// Parenthesized
+const PARENTHESIZED_CHARS = [
+  "⒜","⒝","⒞","⒟","⒠","⒡","⒢","⒣","⒤","⒥","⒦","⒧","⒨","⒩","⒪","⒫","⒬","⒭","⒮","⒯","⒰","⒱","⒲","⒳","⒴","⒵",
+  "⒜","⒝","⒞","⒟","⒠","⒡","⒢","⒣","⒤","⒥","⒦","⒧","⒨","⒩","⒪","⒫","⒬","⒭","⒮","⒯","⒰","⒱","⒲","⒳","⒴","⒵",
+  "⓪","⑴","⑵","⑶","⑷","⑸","⑹","⑺","⑻","⑼"
+];
+
+// Japanese Emulation Kanji
+const JAPANESE_MAP: FontMap = {
+  a: "丹", b: "乃", c: "匚", d: "刀", e: "巳", f: "下", g: "G", h: "卄", i: "工", j: "丁",
+  k: "长", l: "└", m: "爪", n: "𠘨", o: "口", p: "尸", q: "Q", r: "尺", s: "丂", t: "丁",
+  u: "凵", v: "V", w: "山", x: "乂", y: "丫", z: "乙",
+  A: "丹", B: "乃", C: "匚", D: "刀", E: "巳", F: "下", G: "G", H: "卄", I: "工", J: "丁",
+  K: "长", L: "└", M: "爪", N: "𠘨", O: "口", P: "尸", Q: "Q", R: "尺", S: "丂", T: "丁",
+  U: "凵", V: "V", W: "山", X: "乂", Y: "丫", Z: "乙",
+  "0": "〇", "1": "一", "2": "二", "3": "三", "4": "四", "5": "五", "6": "六", "7": "七", "8": "八", "9": "九"
+};
 
 // Inverted / Upside Down Map
 const UPSIDE_DOWN_MAP: FontMap = {
@@ -86,7 +126,7 @@ const FULLWIDTH_CHARS = [
 
 // Monospace
 const MONOSPACE_CHARS = [
-  "𝚊","𝚋","𝚌","𝚍","𝚎","𝚏","𝚐","𝚑","𝚒","𝚓","𝚔","𝚕","𝚖","𝚗","𝚘","𝚙","𝚚","𝚛","𝚜","𝚝","𝚞","𝚟","𝚠","𝚡","𝚢","𝚣",
+  "𝚊","𝚋","𝚌","ｄ","ｅ","𝚏","𝚐","𝚑","𝚒","𝚓","𝚔","𝚕","𝚖","𝚗","𝚘","𝚙","𝚚","𝚛","𝚜","𝚝","𝚞","𝚟","𝚠","𝚡","𝚢","𝚣",
   "𝙰","𝙱","𝙲","𝙳","𝙴","𝙵","𝙶","𝙷","𝙸","𝙹","𝙺","𝙻","𝙼","𝙽","𝙾","𝙿","𝚀","𝚁","𝚂","𝚃","𝚄","𝚅","𝚆","𝚇","𝚈","𝚉",
   "𝟶","𝟷","𝟸","𝟹","𝟺","𝟻","𝟼","𝟽","𝟾","𝟿"
 ];
@@ -107,19 +147,12 @@ const BOLD_SANS_CHARS = [
 
 // Italic Sans
 const ITALIC_SANS_CHARS = [
-  "𝘢","𝘣","𝘤","𝘥","𝘦","𝘧","𝘨","𝘩","𝘪","𝘫","𝘬","𝘭","𝘮","𝘯","𝘰","𝘱","𝘲","𝘳","𝘴","𝘵","𝘶","𝘷","𝘸","𝘹","𝘺","𝘻",
+  "𝘢","𝘣","𝘤","𝘥","𝘦","𝘧","𝘨","𝘩","𝘪","𝘫","𝘬","ˡ","𝘮","𝘯","𝘰","𝘱","𝘲","𝘳","𝘴","𝘵","𝘶","𝘷","𝘸","𝘹","𝘺","𝘻",
   "𝘈","𝘉","𝘊","𝘋","𝘌","𝘍","𝘎","𝘏","𝘐","𝘑","𝘒","𝘓","𝘔","𝘕","𝘖","𝘗","𝘘","𝘙","𝘚","𝘛","𝘜","𝘝","𝘞","𝘟","𝘠","𝘡",
   "0","1","2","3","4","5","6","7","8","9"
 ];
 
-// Squared
-const SQUARED_CHARS = [
-  "🄰","🄱","🄲","🄳","🄴","🄵","🄶","🄷","🄸","🄹","🄺","🄻","🄼","🄽","🄾","🄿","🅀","🅁","🅂","🅃","🅄","🅅","🅆","🅇","🅈","🅉",
-  "🄰","🄱","🄲","🄳","🄴","🄵","🄶","🄷","🄸","🄹","🄺","🄻","🄼","🄽","🄾","🄿","🅀","🅁","🅂","🅃","🅄","🅅","🅆","🅇","🅈","🅉",
-  "0","1","2","3","4","5","6","7","8","9"
-];
-
-const maps = {
+export const maps = {
   gothic: createMap(NORMAL_ALPHA, GOTHIC_CHARS),
   boldGothic: createMap(NORMAL_ALPHA, BOLD_GOTHIC_CHARS),
   script: createMap(NORMAL_ALPHA, SCRIPT_CHARS),
@@ -127,15 +160,19 @@ const maps = {
   doubleStruck: createMap(NORMAL_ALPHA, DOUBLE_STRUCK_CHARS),
   smallCaps: SMALL_CAPS_MAP,
   circled: createMap(NORMAL_ALPHA, CIRCLED_CHARS),
+  circledDark: createMap(NORMAL_ALPHA, CIRCLED_DARK_CHARS),
+  squared: createMap(NORMAL_ALPHA, SQUARED_CHARS),
+  squaredDark: createMap(NORMAL_ALPHA, SQUARED_DARK_CHARS),
+  parenthesized: createMap(NORMAL_ALPHA, PARENTHESIZED_CHARS),
+  japanese: JAPANESE_MAP,
   fullwidth: createMap(NORMAL_ALPHA, FULLWIDTH_CHARS),
   monospace: createMap(NORMAL_ALPHA, MONOSPACE_CHARS),
   boldSerif: createMap(NORMAL_ALPHA, BOLD_SERIF_CHARS),
   boldSans: createMap(NORMAL_ALPHA, BOLD_SANS_CHARS),
   italicSans: createMap(NORMAL_ALPHA, ITALIC_SANS_CHARS),
-  squared: createMap(NORMAL_ALPHA, SQUARED_CHARS),
 };
 
-function transformWithMap(text: string, map: FontMap): string {
+export function transformWithMap(text: string, map: FontMap): string {
   return text
     .split("")
     .map((char) => map[char] || char)
@@ -180,11 +217,16 @@ export function toUnderline(text: string): string {
 export interface DecoratedStyle {
   id: string;
   name: string;
-  category: "Gamer" | "Aesthetic" | "Fonts" | "Fancy" | "Badass";
+  category: "Gamer" | "Aesthetic" | "Fonts" | "Fancy" | "Badass" | "TikTok";
   styled: string;
 }
 
 export const ORNAMENTS = [
+  { name: "TikTok Vibe Check", wrap: (s: string) => `x𝕍𝕚𝕓𝕖 • ${s}` },
+  { name: "TikTok Cat Smile Evil", wrap: (s: string) => `😼シ•${s}•シ😈` },
+  { name: "Broken Heart Aesthetic", wrap: (s: string) => `𝓑𝓻𝓸𝓴𝓮𝓷 𝓗𝓮𝓪𝓻𝓽♡ ${s}` },
+  { name: "Dark Angel Glow", wrap: (s: string) => `✦ 𝕯𝖆𝖗𝖐 𝕬𝖓𝖌𝖊𝖑 ✦ ${s}` },
+  { name: "Crown Just Me", wrap: (s: string) => `👑 Just_${s} 👑` },
   { name: "Free Fire Legendary Wings", wrap: (s: string) => `꧁༒☬${s}☬༒꧂` },
   { name: "Royal Slayer Wings", wrap: (s: string) => `꧁༺${s}༻꧂` },
   { name: "Apex Boss Crown", wrap: (s: string) => `亗『${s}』亗` },
@@ -209,6 +251,9 @@ export const ORNAMENTS = [
   { name: "Demon Horns", wrap: (s: string) => `😈 『${s}』 😈` },
   { name: "Cloud Nine Dreamy", wrap: (s: string) => `☁️ ˖⁺｡˚ ${s} ˚｡⁺˖ ☁️` },
   { name: "Vaporwave Spaced", wrap: (s: string) => s.split("").join("・") },
+  { name: "Sparkle Star Dust", wrap: (s: string) => `༊·˚† ${s} †˚·༊` },
+  { name: "VIP Crown Label", wrap: (s: string) => `『ᴠɪᴘ』亗 ${s} 亗` },
+  { name: "Moonlit Serenade", wrap: (s: string) => `🌙 ⋆｡°✩ ${s} ✩°｡⋆ 🌙` },
 ];
 
 export function generateAllStyles(inputText: string): DecoratedStyle[] {
@@ -220,15 +265,29 @@ export function generateAllStyles(inputText: string): DecoratedStyle[] {
   const boldScript = transformWithMap(text, maps.boldScript);
   const double = transformWithMap(text, maps.doubleStruck);
   const circled = transformWithMap(text, maps.circled);
+  const circledDark = transformWithMap(text, maps.circledDark);
+  const squared = transformWithMap(text, maps.squared);
+  const squaredDark = transformWithMap(text, maps.squaredDark);
+  const parenthesized = transformWithMap(text, maps.parenthesized);
+  const japanese = transformWithMap(text, maps.japanese);
   const fullwidth = transformWithMap(text, maps.fullwidth);
   const monospace = transformWithMap(text, maps.monospace);
   const boldSerif = transformWithMap(text, maps.boldSerif);
   const boldSans = transformWithMap(text, maps.boldSans);
   const italicSans = transformWithMap(text, maps.italicSans);
-  const squared = transformWithMap(text, maps.squared);
 
   const results: DecoratedStyle[] = [
-    // 1. Pro Gamer & Battle Royale Styles
+    // 1. TikTok & Trending Social Viral Styles
+    { id: "tt-vibe", name: "TikTok Aesthetic Vibe", category: "TikTok", styled: `x𝕍𝕚𝕓𝕖 • ${double}` },
+    { id: "tt-cat-smile", name: "TikTok Mischievous Smile", category: "TikTok", styled: `😼シ•${boldSans}•シ😈` },
+    { id: "tt-broken-heart", name: "TikTok Broken Heart", category: "TikTok", styled: `𝓑𝓻𝓸𝓴𝓮𝓷 𝓗𝓮𝓪𝓻𝓽♡ ${script}` },
+    { id: "tt-dark-angel", name: "TikTok Dark Angel", category: "TikTok", styled: `✦ 𝕯𝖆𝖗𝖐 𝕬𝖓𝖌𝖊𝖑 ✦ ${boldGothic}` },
+    { id: "tt-ugly-princess", name: "TikTok Ugly Princess Aesthetic", category: "TikTok", styled: `👑 uglyprincess • ${small}` },
+    { id: "tt-just-me", name: "TikTok Just Me Crown", category: "TikTok", styled: `👑 Just_${boldSans} 👑` },
+    { id: "tt-cross-dagger", name: "TikTok Mystic Cross", category: "TikTok", styled: `༊·˚† ${small} †˚·༊` },
+    { id: "tt-soft-girl", name: "TikTok Soft Girl Aesthetic", category: "TikTok", styled: `♡ 𝑠 𝑜 𝑓 𝑡 _ ${small} ♡` },
+
+    // 2. Pro Gamer & Battle Royale Styles
     { id: "ff-legend", name: "Free Fire Legendary", category: "Gamer", styled: `꧁༒☬${boldGothic}☬༒꧂` },
     { id: "pubg-boss", name: "PUBG/BGMI Conqueror", category: "Gamer", styled: `亗『${small}』亗` },
     { id: "demon-slayer", name: "Demon Hunter Wings", category: "Gamer", styled: `꧁༺${boldSans}༻꧂` },
@@ -244,8 +303,9 @@ export function generateAllStyles(inputText: string): DecoratedStyle[] {
     { id: "cyber-god", name: "Cyber Warlord", category: "Gamer", styled: `【 𝕏 】${boldSans}【 𝕏 】` },
     { id: "royal-crown", name: "Imperial Dynasty", category: "Gamer", styled: `👑 ☬${boldGothic}☬ 👑` },
     { id: "eternity-cross", name: "Holy Crusader", category: "Badass", styled: `† ${boldGothic} †` },
+    { id: "vip-apex", name: "Apex VIP Crown", category: "Gamer", styled: `『ᴠɪᴘ』亗 ${boldSans} 亗` },
 
-    // 2. Aesthetic & Cute Styles
+    // 3. Aesthetic & Cute Styles
     { id: "aesthetic-blossom", name: "Cherry Blossom Soft", category: "Aesthetic", styled: `✿ ${small} ࿐` },
     { id: "kawaii-heart", name: "Sweet Angelic", category: "Aesthetic", styled: `♡ ᥫ᭡ ${script} ᥫ᭡ ♡` },
     { id: "cloud-dream", name: "Dreamy Clouds", category: "Aesthetic", styled: `☁️ ˖⁺｡˚ ${script} ˚｡⁺˖ ☁️` },
@@ -254,9 +314,14 @@ export function generateAllStyles(inputText: string): DecoratedStyle[] {
     { id: "japanese-kanji", name: "Neo Tokyo Vibe", category: "Aesthetic", styled: `『鬼』${small}『神』` },
     { id: "minimal-stars", name: "Minimalist Dotted", category: "Aesthetic", styled: `★ ${small} ★` },
     { id: "heart-beat", name: "Heartbeat Melody", category: "Aesthetic", styled: `─═━┈ ${script} ┈━═─` },
+    { id: "moon-night", name: "Moonlit Starfall", category: "Aesthetic", styled: `🌙 ⋆｡°✩ ${small} ✩°｡⋆ 🌙` },
 
-    // 3. Pure Font Transformations
+    // 4. Pure Font Transformations (Including new competitor additions)
     { id: "font-smallcaps", name: "Small Caps (Clean)", category: "Fonts", styled: small },
+    { id: "font-circled-dark", name: "Circled Dark (Bubble Dark)", category: "Fonts", styled: circledDark },
+    { id: "font-squared-dark", name: "Square Dark (Badge Box)", category: "Fonts", styled: squaredDark },
+    { id: "font-parenthesized", name: "Parenthesized Enclosed", category: "Fonts", styled: parenthesized },
+    { id: "font-japanese-kana", name: "Japanese Kanji Emulation", category: "Fonts", styled: japanese },
     { id: "font-bold-gothic", name: "Bold Fraktur (Gothic)", category: "Fonts", styled: boldGothic },
     { id: "font-gothic", name: "Old English Fraktur", category: "Fonts", styled: gothic },
     { id: "font-bold-script", name: "Bold Cursive Script", category: "Fonts", styled: boldScript },
@@ -274,7 +339,7 @@ export function generateAllStyles(inputText: string): DecoratedStyle[] {
     { id: "font-underline", name: "Cyber Underline", category: "Fancy", styled: toUnderline(text) },
     { id: "font-zalgo", name: "Glitch / Zalgo Corrupted", category: "Fancy", styled: toZalgo(text.slice(0, 15)) },
 
-    // 4. Combined Fancy & Border Variations
+    // 5. Combined Fancy & Border Variations
     ...ORNAMENTS.map((orn, idx) => ({
       id: `ornament-${idx}`,
       name: orn.name,
