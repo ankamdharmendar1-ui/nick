@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { getWebApplicationSchema, getFaqSchema } from "@/lib/seoSchema";
+import { getWebApplicationSchema, getFaqSchema, getOrganizationSchema } from "@/lib/seoSchema";
 
 export const metadata: Metadata = {
   title: "Nickname Generator & Username Creator 🏆 | Nicknamegenerator.io",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "gamer tag maker",
     "names mixer",
   ],
-  authors: [{ name: "Nicknamegenerator.io Team" }],
+  authors: [{ name: "Nicknamegenerator.io Team", url: "https://www.nicknamegenerator.io/about" }],
   creator: "Nicknamegenerator.io",
   publisher: "Nicknamegenerator.io",
   metadataBase: new URL("https://www.nicknamegenerator.io"),
@@ -55,10 +55,15 @@ export default function RootLayout({
 }) {
   const webAppSchema = getWebApplicationSchema();
   const faqSchema = getFaqSchema();
+  const orgSchema = getOrganizationSchema();
 
   return (
     <html lang="en">
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }}
