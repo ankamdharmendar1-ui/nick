@@ -347,18 +347,15 @@ export default function FreefireGrid() {
                 <div className="flex items-center gap-2 min-w-0 pr-2">
                   <span className="font-mono text-[14px] text-[#222] truncate select-all">{nick.name}</span>
                 </div>
-                <div className="flex items-center gap-2 shrink-0">
-                  <span className="text-[11px] text-gray-400 font-mono hidden sm:inline">❤️ {nick.copies}</span>
-                  <span
-                    className={`text-[11px] font-semibold px-2 py-0.5 rounded transition-colors ${
-                      isCopied
-                        ? "bg-[#00a65a] text-white"
-                        : "bg-[#e8f4fd] text-[#2c6da5] group-hover:bg-[#3c8dbc] group-hover:text-white"
-                    }`}
-                  >
-                    {isCopied ? "Copied!" : "Copy"}
-                  </span>
-                </div>
+                <span
+                  className={`text-[11px] font-semibold px-2 py-0.5 rounded shrink-0 transition-colors ${
+                    isCopied
+                      ? "bg-[#00a65a] text-white"
+                      : "bg-[#e8f4fd] text-[#2c6da5] group-hover:bg-[#3c8dbc] group-hover:text-white"
+                  }`}
+                >
+                  {isCopied ? "Copied!" : "Copy"}
+                </span>
               </div>
             );
           })}

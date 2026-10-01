@@ -220,9 +220,6 @@ export default function TiktokGrid() {
                   <div className="text-[14px] font-medium truncate tracking-wide">
                     {item.name}
                   </div>
-                  <div className={`text-[11px] flex items-center gap-1 ${isCopied ? "text-white/80" : "text-gray-400"}`}>
-                    <span>❤️ {item.likes.toLocaleString()} copies</span>
-                  </div>
                 </div>
                 <span
                   className={`text-[11px] px-2 py-0.5 rounded font-semibold shrink-0 ${
