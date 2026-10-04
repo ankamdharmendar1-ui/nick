@@ -3,13 +3,16 @@ import "./globals.css";
 import { getWebApplicationSchema, getFaqSchema, getOrganizationSchema } from "@/lib/seoSchema";
 
 export const metadata: Metadata = {
-  title: "Nickname Generator & Username Creator 🏆 | Nicknamegenerator.io",
+  title: "Nickname Generator: Nickname Maker & Stylish Name Writing",
   description:
-    "Free online nickname generator and username creator. Design standout nicknames, stylish font styles, and aesthetic usernames with rare symbols. Built for Free Fire, PUBG, Discord, Roblox, and social media.",
+    "Free online nickname generator, nickname maker, and stylish name creator. Design standout nicknames, stylish font writing, and aesthetic usernames with rare symbols for Free Fire, PUBG, Instagram, and TikTok.",
   keywords: [
     "nickname generator",
-    "nick name generator",
     "nickname maker",
+    "name writing",
+    "nickname creator",
+    "stylish name writing",
+    "nick name generator",
     "nicknamegenerator.io",
     "username generator",
     "stylish name for free fire",
@@ -29,9 +32,9 @@ export const metadata: Metadata = {
     canonical: "https://www.nicknamegenerator.io",
   },
   openGraph: {
-    title: "Nickname Generator & Username Creator 🏆 | Nicknamegenerator.io",
+    title: "Nickname Generator: Nickname Maker & Stylish Name Writing",
     description:
-      "Free online nickname generator and username creator. Design standout nicknames, stylish font styles, and aesthetic usernames with rare symbols. Built for Free Fire, PUBG, Discord, Roblox, and social media.",
+      "Free online nickname generator, nickname maker, and stylish name creator. Design standout nicknames, stylish font writing, and aesthetic usernames with rare symbols for Free Fire, PUBG, Instagram, and TikTok.",
     url: "https://www.nicknamegenerator.io",
     siteName: "Nicknamegenerator.io",
     locale: "en_US",
