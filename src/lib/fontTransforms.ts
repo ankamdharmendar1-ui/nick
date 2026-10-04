@@ -152,6 +152,24 @@ const ITALIC_SANS_CHARS = [
   "0","1","2","3","4","5","6","7","8","9"
 ];
 
+// Sans Bold Italic
+const BOLD_ITALIC_SANS_CHARS = [
+  "𝙖","𝙗","𝙘","𝙙","𝙚","𝙛","𝙜","𝙝","𝙞","𝙟","𝙠","𝙡","𝙢","𝙣","𝙤","𝙥","𝙦","𝙧","𝙨","𝙩","𝙪","𝙫","𝙬","𝙭","𝙮","𝙯",
+  "𝘼","𝘽","𝘾","𝘿","𝙀","𝙁","𝙂","𝙃","𝙄","𝙅","𝙆","𝙇","𝙈","𝙉","𝙊","𝙋","𝙌","𝙍","𝙎","𝙏","𝙐","𝙑","𝙒","𝙓","𝙔","𝙕",
+  "𝟬","𝟭","𝟮","𝟯","𝟰","𝟱","𝟲","𝟳","𝟴","𝟵"
+];
+
+// Upper Angles
+const UPPER_ANGLES_MAP: FontMap = {
+  a: "Λ", b: "ß", c: "Ͼ", d: "Ð", e: "Ɛ", f: "F", g: "G", h: "H", i: "I", j: "J",
+  k: "K", l: "L", m: "M", n: "N", o: "Ø", p: "P", q: "Q", r: "R", s: "S", t: "Ƭ",
+  u: "U", v: "V", w: "W", x: "X", y: "Y", z: "Z",
+  A: "Λ", B: "ß", C: "Ͼ", D: "Ð", E: "Ɛ", F: "F", G: "G", H: "H", I: "I", J: "J",
+  K: "K", L: "L", M: "M", N: "N", O: "Ø", P: "P", Q: "Q", R: "R", S: "S", T: "Ƭ",
+  U: "U", V: "V", W: "W", X: "X", Y: "Y", Z: "Z",
+  "0": "0", "1": "1", "2": "2", "3": "3", "4": "4", "5": "5", "6": "6", "7": "7", "8": "8", "9": "9"
+};
+
 export const maps = {
   gothic: createMap(NORMAL_ALPHA, GOTHIC_CHARS),
   boldGothic: createMap(NORMAL_ALPHA, BOLD_GOTHIC_CHARS),
@@ -170,6 +188,8 @@ export const maps = {
   boldSerif: createMap(NORMAL_ALPHA, BOLD_SERIF_CHARS),
   boldSans: createMap(NORMAL_ALPHA, BOLD_SANS_CHARS),
   italicSans: createMap(NORMAL_ALPHA, ITALIC_SANS_CHARS),
+  boldItalicSans: createMap(NORMAL_ALPHA, BOLD_ITALIC_SANS_CHARS),
+  upperAngles: UPPER_ANGLES_MAP,
 };
 
 export function transformWithMap(text: string, map: FontMap): string {
@@ -275,6 +295,8 @@ export function generateAllStyles(inputText: string): DecoratedStyle[] {
   const boldSerif = transformWithMap(text, maps.boldSerif);
   const boldSans = transformWithMap(text, maps.boldSans);
   const italicSans = transformWithMap(text, maps.italicSans);
+  const boldItalicSans = transformWithMap(text, maps.boldItalicSans);
+  const upperAngles = transformWithMap(text, maps.upperAngles);
 
   const results: DecoratedStyle[] = [
     // 1. TikTok & Trending Social Viral Styles
@@ -316,8 +338,10 @@ export function generateAllStyles(inputText: string): DecoratedStyle[] {
     { id: "heart-beat", name: "Heartbeat Melody", category: "Aesthetic", styled: `─═━┈ ${script} ┈━═─` },
     { id: "moon-night", name: "Moonlit Starfall", category: "Aesthetic", styled: `🌙 ⋆｡°✩ ${small} ✩°｡⋆ 🌙` },
 
-    // 4. Pure Font Transformations (Including new competitor additions)
+    // 4. Pure Font Transformations (Including competitor additions)
     { id: "font-smallcaps", name: "Small Caps (Clean)", category: "Fonts", styled: small },
+    { id: "font-bold-italic-sans", name: "Sans Bold Italic", category: "Fonts", styled: boldItalicSans },
+    { id: "font-upper-angles", name: "Upper Angles", category: "Fonts", styled: upperAngles },
     { id: "font-circled-dark", name: "Circled Dark (Bubble Dark)", category: "Fonts", styled: circledDark },
     { id: "font-squared-dark", name: "Square Dark (Badge Box)", category: "Fonts", styled: squaredDark },
     { id: "font-parenthesized", name: "Parenthesized Enclosed", category: "Fonts", styled: parenthesized },
