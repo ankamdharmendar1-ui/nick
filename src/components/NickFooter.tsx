@@ -124,6 +124,16 @@ export const NickFooter: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/cute-names" title="Cute stylish names for girls, aesthetic fonts & kaomoji nicknames" className="text-[#2c6da5] hover:underline font-medium">
+                  Cute Stylish Names
+                </Link>
+              </li>
+              <li>
+                <Link href="/boss-names" title="Boss stylish names, mafia fonts & attitude gaming nicknames" className="text-[#2c6da5] hover:underline font-medium">
+                  Boss Stylish Names
+                </Link>
+              </li>
+              <li>
                 <Link href="/instagram-girl-attitude-names" title="Attitude names and bios for Instagram girls" className="text-[#2c6da5] hover:underline">
                   Instagram Attitude Girls
                 </Link>

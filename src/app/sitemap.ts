@@ -56,6 +56,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/tiktok`,                         lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/devil-names`,                    lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/facebook`,                       lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/cute-names`,                     lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/boss-names`,                     lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/de/instagram`,                   lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/fr/instagram`,                   lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/es/instagram`,                   lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.9 },
