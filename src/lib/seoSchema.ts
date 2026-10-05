@@ -15,7 +15,7 @@ export function getOrganizationSchema() {
       "width": 180,
       "height": 180,
     },
-    "foundingDate": "2022",
+    "foundingDate": "2026",
     "description":
       "Nicknamegenerator.io is a free online nickname and username generator. We help gamers, social media users, and content creators design standout nicknames with stylish fonts, rare symbols, and creative name tools — 100% free.",
     "contactPoint": {
