@@ -178,6 +178,126 @@ export const NickSidebar: React.FC<NickSidebarProps> = ({
           </li>
         </ul>
 
+        {/* Section: GAMING & SOCIAL */}
+        <div className="bg-[#ecf0f5] px-4 py-2 text-[11px] font-bold tracking-wider text-[#555] uppercase border-y border-[#d2d6de]">
+          GAMING &amp; SOCIAL
+        </div>
+
+        <ul className="list-none p-0 m-0 text-[14px]">
+          <li>
+            <Link
+              href="/freefire"
+              onClick={() => handleNav("freefire")}
+              title="Free Fire Stylish Names & FF Name Generator"
+              className={`block w-full text-left px-4 py-2.5 transition-colors border-l-4 ${
+                activeTab === "freefire"
+                  ? "bg-[#2f4867] text-white border-[#00c0ef] font-semibold"
+                  : "text-[#333333] hover:bg-[#f4f6f9] border-transparent"
+              }`}
+            >
+              Free Fire Names
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/free-fire-guild-name"
+              onClick={() => handleNav("free-fire-guild-name")}
+              title="Free Fire Guild Names & Clan Tags Generator"
+              className={`block w-full text-left px-4 py-2.5 transition-colors border-l-4 ${
+                activeTab === "free-fire-guild-name"
+                  ? "bg-[#2f4867] text-white border-[#00c0ef] font-semibold"
+                  : "text-[#333333] hover:bg-[#f4f6f9] border-transparent"
+              }`}
+            >
+              FF Guild Names
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/pubg-stylish-name"
+              onClick={() => handleNav("pubg-stylish-name")}
+              title="Best PUBG Names & PUBG Stylish Name Generator"
+              className={`block w-full text-left px-4 py-2.5 transition-colors border-l-4 ${
+                activeTab === "pubg-stylish-name"
+                  ? "bg-[#2f4867] text-white border-[#00c0ef] font-semibold"
+                  : "text-[#333333] hover:bg-[#f4f6f9] border-transparent"
+              }`}
+            >
+              PUBG Names
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/instagram"
+              onClick={() => handleNav("instagram")}
+              title="Instagram Stylish Names & Bio Fonts"
+              className={`block w-full text-left px-4 py-2.5 transition-colors border-l-4 ${
+                activeTab === "instagram"
+                  ? "bg-[#2f4867] text-white border-[#00c0ef] font-semibold"
+                  : "text-[#333333] hover:bg-[#f4f6f9] border-transparent"
+              }`}
+            >
+              Instagram Names
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/facebook"
+              onClick={() => handleNav("facebook")}
+              title="Facebook Stylish Names & VIP Profile Fonts"
+              className={`block w-full text-left px-4 py-2.5 transition-colors border-l-4 ${
+                activeTab === "facebook"
+                  ? "bg-[#2f4867] text-white border-[#00c0ef] font-semibold"
+                  : "text-[#333333] hover:bg-[#f4f6f9] border-transparent"
+              }`}
+            >
+              Facebook Names
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/cute-names"
+              onClick={() => handleNav("cute-names")}
+              title="Cute Stylish Names for Girls & Aesthetic Fonts"
+              className={`block w-full text-left px-4 py-2.5 transition-colors border-l-4 ${
+                activeTab === "cute-names"
+                  ? "bg-[#2f4867] text-white border-[#00c0ef] font-semibold"
+                  : "text-[#333333] hover:bg-[#f4f6f9] border-transparent"
+              }`}
+            >
+              Cute Names
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/boss-names"
+              onClick={() => handleNav("boss-names")}
+              title="Boss Stylish Names & Attitude Gaming Fonts"
+              className={`block w-full text-left px-4 py-2.5 transition-colors border-l-4 ${
+                activeTab === "boss-names"
+                  ? "bg-[#2f4867] text-white border-[#00c0ef] font-semibold"
+                  : "text-[#333333] hover:bg-[#f4f6f9] border-transparent"
+              }`}
+            >
+              Boss Names
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/devil-names"
+              onClick={() => handleNav("devil-names")}
+              title="Devil Stylish Names & Demon Gaming Fonts"
+              className={`block w-full text-left px-4 py-2.5 transition-colors border-l-4 ${
+                activeTab === "devil-names"
+                  ? "bg-[#2f4867] text-white border-[#00c0ef] font-semibold"
+                  : "text-[#333333] hover:bg-[#f4f6f9] border-transparent"
+              }`}
+            >
+              Devil Names
+            </Link>
+          </li>
+        </ul>
+
         {/* Section: INTERFACE LANGUAGE */}
         <div className="bg-[#ecf0f5] px-4 py-2 text-[11px] font-bold tracking-wider text-[#555] uppercase border-y border-[#d2d6de]">
           {t.interfaceLanguage}
