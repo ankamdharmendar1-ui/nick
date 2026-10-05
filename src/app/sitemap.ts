@@ -75,7 +75,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ── Tool Generators ────────────────────────────────────────────────────
     { url: `${BASE_URL}/names-mixer`,                    lastModified: LAST_MODIFIED, changeFrequency: "weekly",  priority: 0.9 },
     { url: `${BASE_URL}/nickname-to-symbols`,            lastModified: LAST_MODIFIED, changeFrequency: "weekly",  priority: 0.9 },
-    { url: `${BASE_URL}/cool-text`,                      lastModified: LAST_MODIFIED, changeFrequency: "weekly",  priority: 0.8 },
+    { url: `${BASE_URL}/cool-text`,                      lastModified: LAST_MODIFIED, changeFrequency: "weekly",  priority: 0.9 },
     { url: `${BASE_URL}/grouped-by-symbol`,              lastModified: LAST_MODIFIED, changeFrequency: "weekly",  priority: 0.8 },
     { url: `${BASE_URL}/male-names`,                     lastModified: LAST_MODIFIED, changeFrequency: "weekly",  priority: 0.8 },
     { url: `${BASE_URL}/female-names`,                   lastModified: LAST_MODIFIED, changeFrequency: "weekly",  priority: 0.8 },
