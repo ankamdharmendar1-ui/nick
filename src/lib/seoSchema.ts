@@ -21,6 +21,7 @@ export function getOrganizationSchema() {
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "customer support",
+      "email": "contact@nicknamegenerator.io",
       "url": `${WEBSITE_URL}/contact`,
       "availableLanguage": [
         "English", "Spanish", "French", "German", "Italian",

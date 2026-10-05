@@ -60,7 +60,11 @@ export default function PrivacyPolicyPage() {
             </section>
             <section>
               <h2 className="text-[15px] font-bold text-[#354861] mb-1 border-b border-[#f4f4f4] pb-1">6. Contact Us</h2>
-              <p className="m-0">If you have any questions or concerns regarding this Privacy Policy, please reach out via our{" "}
+              <p className="m-0">If you have any questions or concerns regarding this Privacy Policy, please email us directly at{" "}
+                <a href="mailto:contact@nicknamegenerator.io" className="text-[#2c6da5] underline hover:text-[#23527c]">
+                  contact@nicknamegenerator.io
+                </a>{" "}
+                or reach out via our{" "}
                 <Link href="/contact" className="text-[#2c6da5] underline hover:text-[#23527c]">Contact Page</Link>.
               </p>
             </section>

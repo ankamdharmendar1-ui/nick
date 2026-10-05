@@ -39,6 +39,7 @@ export default function TermsPage() {
               { n: "3", title: "Intellectual Property & Trademarks", body: "Free Fire is a registered trademark of Garena. PUBG Mobile and BGMI are registered trademarks of KRAFTON Inc. Valorant is a trademark of Riot Games. Roblox is a trademark of Roblox Corporation. Nicknamegenerator.io is an independent tool and is not affiliated, endorsed, or sponsored by any of these entities." },
               { n: "4", title: "Disclaimer of Warranty", body: 'All tools, fonts, and decorations are provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind. We do not guarantee that every game client or operating system will render every Unicode symbol identically.' },
               { n: "5", title: "Changes to Terms", body: "We reserve the right to revise or modify these Terms of Use at any time without prior notice. Continued use of our site signifies acceptance of any updated terms." },
+              { n: "6", title: "Inquiries & Contact", body: "If you have questions regarding these terms, copyright notices, or trademark inquiries, please email our support team at contact@nicknamegenerator.io." },
             ].map((s) => (
               <section key={s.n}>
                 <h2 className="text-[15px] font-bold text-[#354861] mb-1 border-b border-[#f4f4f4] pb-1">{s.n}. {s.title}</h2>

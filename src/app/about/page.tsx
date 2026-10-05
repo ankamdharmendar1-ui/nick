@@ -182,7 +182,11 @@ export default function AboutPage() {
           <div className="p-5 text-[14px] text-gray-700 leading-relaxed">
             <p>
               Have a suggestion, found a bug, or want to suggest new symbols? We&apos;d love to hear from you.
-              Visit our <Link href="/contact" className="text-[#2c6da5] hover:underline font-semibold">Contact Page</Link> to get in touch with our team.
+              Email us directly at{" "}
+              <a href="mailto:contact@nicknamegenerator.io" className="text-[#2c6da5] font-semibold hover:underline">
+                contact@nicknamegenerator.io
+              </a>{" "}
+              or visit our <Link href="/contact" className="text-[#2c6da5] hover:underline font-semibold">Contact Page</Link>.
             </p>
           </div>
         </div>
